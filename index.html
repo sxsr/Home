@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/alert.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel=https://github.com/sxsr/home.git>
+    <link rel=git@github.com:sxsr/home.git>
+    <script src="scripts/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <meta name="description" content="- Ell - Offical Website">
+    <title>- Ell -</title>
+    <meta name="keywords" content="- Ell -">
+    <link rel="icon" href="images/main.png">
+</head>
+
+<body>
+
+    <div class="load-screen">
+        <div class="loader"></div>
+    </div>
+
+    <div class="header">
+        <header>
+            <h2>- E <span> ll -</span></h2>
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="news.html">Patch Notes</a></li>
+                <li><a href="Hamad G.html">Hamad G</a></li>
+
+            </ul>
+        </header>
+    </div>
+
+    <!-- Side Menu -->
+    <input type="checkbox" id="check">
+        <label for="check">
+        <a id="menu">Menu</a>
+        <a id="cancel">Close</a>
+        </label>
+        <div class="sidebar">
+            <header>- Ell -</header>
+            <ul>
+                <i class="fas fa-clock"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Hamad G.html">Hamad G</a></li>
+            </ul>
+        </div>
+
+    <!-- Home -->
+    <section class="home">
+        <div class="content">
+            <div class="container-texts">
+                
+                <h1>- E<span> ll -</span></h1>
+                <h3>Here is all - Ell - things...</h3>
+
+                <!-- f0m14 + sxsr :) -->
+                <div class="social">
+                    <a href="https://www.instagram.com/sxshr?igsh=N3duNHFpaHNsc3h6" target="_blank"><img src="images/icons/instagram.png"></a>
+                    <a href="https://x.com/ell_hamed?s=09" target="_blank"><img src="images/icons/twitter.png"></a>
+                    <a href="https://t.me/cv966" target="_blank"><img src="images/icons/telegram.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container-images">
+            <img src="images/main.png" class="floating" alt="- Ell - Avatar">
+        </div>
+        <div class="container-texts">
+            <h1>About <span>Me</span></h1>
+            <h5 class="typing-text">I'm a <span></span></h5>
+            <h5>
+                Hi, I am<span>Ahmed or Hamad or Ell</span>, I am 18 years old. I am sharing my learning journey as a programming student<span>, and I be working develop bots,</span> websites<span>and anything related to programming :)</span></a>
+            </h5>
+        </div>
+    </section>
+
+
+        </div>
+      </section>
+
+    <section class="skills">
+        <h1>Skills</h1>
+        <div class="skills-container" id="skills-container"></div>
+    </section>
+
+    <footer class="footer">
+        <h6>©<p id="currentYear"></p> All rights reserved.</h6>
+        <a href="news.html">Website Version</a>
+    </footer>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').innerHTML = currentYear;
+    </script>
+
+    <div id="settings" style="display: none;">
+        <h1 style="margin-bottom: 20px; font-size: 32px;">Font Manager</h1>
+        <label for="font-size">Text Size:</label>
+        <input type="range" id="font-size" min="12" max="24" value="16" step="1">
+        <p>Font Size: <span id="font-size-text"></span></p>
+        
+        <hr>
+
+        <label for="theme-selector"></label>
+        <h1 style="margin-bottom: 20px; font-size: 32px;">Select Themes</h1>
+        <select id="theme-selector" onchange="changeTheme(this.value)">
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+            <option value="black">Dark (Reverse)</option>
+        </select>
+        </div>
+    </div>
+
+    <script src="scripts/skills.js"></script>
+
+    </body>
+</html>
